@@ -15,7 +15,30 @@
 
     </head>
     <body>
-
+<center>
+    <h3 class="btn btn-warning">Ai ping pong</h3>
+    <button class="btn btn-info" data-toggle="modal" data-target="#INSTRUCTIONS">INSTRUCTIONS</button>
+    <button class="btn btn-success" onclick="startGame()">play</button>
+    <h4 id="element" ></h4>
+    <div id="canvasdiv"></div>
+    <button id="restart" onclick="restart()" class="btn btn-danger">RESTART</button>
+    <div id="INSTRUCTIONS" class="modal fade">
+        <div class="modal-dialog">
+         <div class="modal-content">
+          <div class="modal-header">
+           <button class="close" data-dismiss="modal">&times;</button>
+           <h4>Instructions</h4> 
+          </div>
+          <div class="modal-body">
+            <img src="jump.png" class="instruction_image">
+            <img src="right.png" class="instruction_image">
+            <img src="left.png" class="instruction_image"> 
+               </div>
+          </div>
+         </div>
+       </div>
+       <div id="copyright">BY - Aadhavan</div>
+</center>
         <script src="main.js"></script>
     </body>
 </html>
